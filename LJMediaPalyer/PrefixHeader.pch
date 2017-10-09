@@ -1,0 +1,43 @@
+//
+//  PrefixHeader.pch
+//  LJMediaPalyer
+//
+//  Created by 孙伟伟 on 2017/5/1.
+//  Copyright © 2017年 孙伟伟. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "CHBaseViewController.h"
+#import "UIViewController+HUD.h"
+
+
+/* 模拟器调试 */
+/** 1. 去这里 /usr/local/etc/mosquitto/ 给服务器绑定127.0.0.1 ip地址
+    然后就可以在真机上接受MQTT的消息了 
+ */
+//#define kMQTTServerHost @"127.0.0.1"
+//#define kTopic @"#"  //@"mqtt"//
+
+/** 真机调试 */
+/** 1. 去这里 /usr/local/etc/mosquitto/ 给服务器绑定当前的电脑的ip地址
+    然后就可以在真机上接受MQTT的消息了*/
+#define kMQTTServerHost @"10.50.47.57"
+#define kTopic @"#"
+
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
+
+// - weak & strong
+#define myWeakify(VAR) \
+try {} @finally {} \
+__weak __typeof__(VAR) VAR##_myWeak_ = (VAR)
+
+#define myStrongify(VAR) \
+try {} @finally {} \
+__strong __typeof__(VAR) VAR = VAR##_myWeak_
+
+
+#endif /* PrefixHeader_pch */
