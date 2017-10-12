@@ -9,8 +9,20 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
+#import <Foundation/Foundation.h>
+
+static inline void onMainThreadAsync(void (^block)()) {
+    if ([NSThread isMainThread]) block();
+    else dispatch_async(dispatch_get_main_queue(), block);
+}
+
+static inline void onGlobalThreadAsync(void (^block)()) {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), block);
+}
+
 #import "CHBaseViewController.h"
 #import "UIViewController+HUD.h"
+#import "LJBulletDefine.h"
 
 //字体
 #define loadFont(size)  [UIFont systemFontOfSize:size]
@@ -20,7 +32,7 @@
 
 /* 模拟器调试 */
 /** 1. 去这里 /usr/local/etc/mosquitto/ 给服务器绑定127.0.0.1 ip地址
-    然后就可以在真机上接受MQTT的消息了 
+    然后就可以在真机上接受MQTT的消息了
  */
 //#define kMQTTServerHost @"127.0.0.1"
 //#define kTopic @"#"  //@"mqtt"//

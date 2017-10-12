@@ -9,14 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "LJBulletView.h"
 
-@class LJBulletView;
-
 @interface LJBulletViewManager : UIView
 
 @property (nonatomic, copy) void(^generateBulletBlock)(LJBulletView *view);
-
-#pragma mark -- 最后一步渲染-----显示
-- (BOOL)renderNewDanmaku:(LJBulletView *)danmakuAgent forTime:(HJDanmakuTime)time;
 
 - (void)sendDanmaku:(LJBulletView *)danmaku forceRender:(BOOL)force;
 

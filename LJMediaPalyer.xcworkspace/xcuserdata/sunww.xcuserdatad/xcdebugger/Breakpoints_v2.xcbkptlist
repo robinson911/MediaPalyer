@@ -486,54 +486,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LJMediaPalyer/View/BulletView/LJBulletView.m"
-            timestampString = "529490597.117981"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "136"
-            endingLineNumber = "136"
-            landmarkName = "@implementation LJBulletView"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LJMediaPalyer/View/BulletView/LJBulletView.m"
-            timestampString = "529490597.117981"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
-            landmarkName = "@implementation LJBulletView"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LJMediaPalyer/View/BulletView/LJBulletView.m"
-            timestampString = "529490597.117981"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "142"
-            endingLineNumber = "142"
-            landmarkName = "@implementation LJBulletView"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -794,11 +746,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LJMediaPalyer/View/BulletView/LJBulletViewManager.m"
-            timestampString = "529486767.875908"
+            timestampString = "529496251.789804"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "165"
-            endingLineNumber = "165"
+            startingLineNumber = "156"
+            endingLineNumber = "156"
             landmarkName = "-layoutNewDanmaku:forTime:"
             landmarkType = "7">
          </BreakpointContent>
@@ -810,11 +762,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LJMediaPalyer/View/BulletView/LJBulletViewManager.m"
-            timestampString = "529486767.875908"
+            timestampString = "529496251.789804"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "231"
-            endingLineNumber = "231"
+            startingLineNumber = "207"
+            endingLineNumber = "207"
             landmarkName = "-renderNewDanmaku:forTime:"
             landmarkType = "7">
          </BreakpointContent>
@@ -826,11 +778,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LJMediaPalyer/View/BulletView/LJBulletViewManager.m"
-            timestampString = "529486767.875908"
+            timestampString = "529496251.789804"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "251"
-            endingLineNumber = "251"
+            startingLineNumber = "227"
+            endingLineNumber = "227"
             landmarkName = "-layoutPyWithLRDanmaku:forTime:"
             landmarkType = "7">
          </BreakpointContent>
@@ -842,11 +794,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LJMediaPalyer/View/BulletView/LJBulletViewManager.m"
-            timestampString = "529486767.875908"
+            timestampString = "529496251.789804"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "229"
-            endingLineNumber = "229"
+            startingLineNumber = "205"
+            endingLineNumber = "205"
             landmarkName = "-renderNewDanmaku:forTime:"
             landmarkType = "7">
          </BreakpointContent>
@@ -858,28 +810,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LJMediaPalyer/View/BulletView/LJBulletViewManager.m"
-            timestampString = "529486767.875908"
+            timestampString = "529496251.789804"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "131"
-            endingLineNumber = "131"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
             landmarkName = "-renderDisplayingDanmakusForTime:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LJMediaPalyer/View/BulletView/LJBulletViewManager.m"
-            timestampString = "529486767.875908"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "187"
-            endingLineNumber = "187"
-            landmarkName = "-sendDanmaku:forceRender:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

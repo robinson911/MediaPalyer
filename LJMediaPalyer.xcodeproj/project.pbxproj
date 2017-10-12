@@ -16,6 +16,7 @@
 		CE1E1E6F1E9A625C009B907B /* UIView+IWExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1E1E6E1E9A625C009B907B /* UIView+IWExtension.m */; };
 		CE1E1E721E9A653B009B907B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1E1E711E9A653B009B907B /* AVFoundation.framework */; };
 		CE2148FC1F8F530E0098E4D2 /* CHUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2148FB1F8F530E0098E4D2 /* CHUtil.m */; };
+		CE2148FF1F8F76B70098E4D2 /* LJBulletDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2148FE1F8F76B70098E4D2 /* LJBulletDefine.m */; };
 		CE2CCFBB1F8DB7AD00FCAF6D /* LJBulletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2CCFBA1F8DB7AD00FCAF6D /* LJBulletViewController.m */; };
 		CE5C733F1ED1D3FE0097C01D /* gobackBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5C733D1ED1D3FE0097C01D /* gobackBtn@2x.png */; };
 		CE5C73401ED1D3FE0097C01D /* gobackBtn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5C733E1ED1D3FE0097C01D /* gobackBtn@3x.png */; };
@@ -54,7 +55,6 @@
 		CEDC20701EDE6951002BF587 /* CHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC206A1EDE6951002BF587 /* CHBaseViewController.m */; };
 		CEDC20711EDE6951002BF587 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC206C1EDE6951002BF587 /* ViewController.m */; };
 		CEDC20741EDE6B23002BF587 /* LJTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC20731EDE6B23002BF587 /* LJTestView.m */; };
-		CEDC2ECB1EDEFD50002BF587 /* LJBulletLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC2ECA1EDEFD50002BF587 /* LJBulletLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +74,8 @@
 		CE1E1E711E9A653B009B907B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		CE2148FA1F8F530E0098E4D2 /* CHUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHUtil.h; sourceTree = "<group>"; };
 		CE2148FB1F8F530E0098E4D2 /* CHUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHUtil.m; sourceTree = "<group>"; };
+		CE2148FD1F8F76B70098E4D2 /* LJBulletDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJBulletDefine.h; sourceTree = "<group>"; };
+		CE2148FE1F8F76B70098E4D2 /* LJBulletDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJBulletDefine.m; sourceTree = "<group>"; };
 		CE2CCFB91F8DB7AD00FCAF6D /* LJBulletViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJBulletViewController.h; sourceTree = "<group>"; };
 		CE2CCFBA1F8DB7AD00FCAF6D /* LJBulletViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJBulletViewController.m; sourceTree = "<group>"; };
 		CE5C733D1ED1D3FE0097C01D /* gobackBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gobackBtn@2x.png"; sourceTree = "<group>"; };
@@ -131,8 +133,6 @@
 		CEDC206C1EDE6951002BF587 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CEDC20721EDE6B23002BF587 /* LJTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJTestView.h; sourceTree = "<group>"; };
 		CEDC20731EDE6B23002BF587 /* LJTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJTestView.m; sourceTree = "<group>"; };
-		CEDC2EC91EDEFD50002BF587 /* LJBulletLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJBulletLabel.h; sourceTree = "<group>"; };
-		CEDC2ECA1EDEFD50002BF587 /* LJBulletLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJBulletLabel.m; sourceTree = "<group>"; };
 		FF3222D5FD196756CDD79E97 /* Pods-LJMediaPalyer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LJMediaPalyer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LJMediaPalyer/Pods-LJMediaPalyer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -336,8 +336,8 @@
 				CEDC20581EDE6949002BF587 /* LJBulletView.m */,
 				CEDC20591EDE6949002BF587 /* LJBulletViewManager.h */,
 				CEDC205A1EDE6949002BF587 /* LJBulletViewManager.m */,
-				CEDC2EC91EDEFD50002BF587 /* LJBulletLabel.h */,
-				CEDC2ECA1EDEFD50002BF587 /* LJBulletLabel.m */,
+				CE2148FD1F8F76B70098E4D2 /* LJBulletDefine.h */,
+				CE2148FE1F8F76B70098E4D2 /* LJBulletDefine.m */,
 			);
 			path = BulletView;
 			sourceTree = "<group>";
@@ -538,7 +538,6 @@
 				CE2148FC1F8F530E0098E4D2 /* CHUtil.m in Sources */,
 				CEDC20741EDE6B23002BF587 /* LJTestView.m in Sources */,
 				CEDC205E1EDE6949002BF587 /* LJBulletViewManager.m in Sources */,
-				CEDC2ECB1EDEFD50002BF587 /* LJBulletLabel.m in Sources */,
 				CE858A361F8A11B000A156DF /* BasePlayViewController.m in Sources */,
 				CEDC20701EDE6951002BF587 /* CHBaseViewController.m in Sources */,
 				CEDC205B1EDE6949002BF587 /* LJAVPlayControlView.m in Sources */,
@@ -550,6 +549,7 @@
 				CE1E1E6F1E9A625C009B907B /* UIView+IWExtension.m in Sources */,
 				CEDC206D1EDE6951002BF587 /* LJAVPlayViewController.m in Sources */,
 				CEDC206F1EDE6951002BF587 /* LJMPMoviePlayerViewController.m in Sources */,
+				CE2148FF1F8F76B70098E4D2 /* LJBulletDefine.m in Sources */,
 				CE2CCFBB1F8DB7AD00FCAF6D /* LJBulletViewController.m in Sources */,
 				CE858A331F8A092C00A156DF /* LJVedioViewController.m in Sources */,
 				CEDC205C1EDE6949002BF587 /* LJAVPlayView.m in Sources */,
