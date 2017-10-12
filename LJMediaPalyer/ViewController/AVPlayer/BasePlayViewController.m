@@ -86,7 +86,7 @@
 - (void)setTitleStr:(NSString *)titleStr
 {
     if (titleStr.length == 0) {
-        _ljAVPlayView.titleStr = @"美国大片";
+        titleStr = @"美国大片";
     }
     _ljAVPlayView.titleStr = titleStr;
 }
@@ -94,7 +94,7 @@
 - (void)setUrlStr:(NSString *)urlStr
 {
     if (urlStr.length == 0) {
-        _ljAVPlayView.urlStr = @"http://baobab.wdjcdn.com/1455969783448_5560_854x480.mp4";
+        urlStr = @"http://baobab.wdjcdn.com/1455969783448_5560_854x480.mp4";
     }
     _ljAVPlayView.urlStr = urlStr;
 }

@@ -11,9 +11,10 @@
 #define mDuration   5
 #define Padding     5
 
+
+
 @interface LJBulletView ()
-//弹幕label
-@property (nonatomic, strong)UILabel *ljBulletLabel;
+
 
 @end
 
@@ -31,30 +32,45 @@
     if (self)
     {
         self.userInteractionEnabled = NO;
-        CGSize ljsize = [self getTextCGSize:content Font:[UIFont systemFontOfSize:14]];
-        self.bounds = CGRectMake(0, 0, ljsize.width + Padding*2, 25);
+        //CGSize ljsize = [self getTextCGSize:content Font:[UIFont systemFontOfSize:14]];
+        //self.bounds = CGRectMake(0, 0, ljsize.width, cellHeight);
         //self.backgroundColor = [UIColor grayColor];
         
+//        CGFloat width = [content sizeWithAttributes:@{NSFontAttributeName: [UIFont systemFontOfSize:14]}].width + 1.0f;
+        
+        CGFloat width = [CHUtil getTextCGSize:content Font:loadFont(14)].width + 1.0f;
+        _ljBulletLabel = [[UILabel alloc]init];
+        _ljBulletLabel.backgroundColor = [UIColor clearColor];
+        _ljBulletLabel.font = [UIFont systemFontOfSize:14];
+        //_ljBulletLabel.textColor = [UIColor redColor];
+        _ljBulletLabel.clipsToBounds = YES;
+        _ljBulletLabel.layer.cornerRadius = 2;
+        _ljBulletLabel.layer.borderWidth = 1;
+        _ljBulletLabel.layer.borderColor = [UIColor redColor].CGColor;
         //添加弹幕label
-        self.ljBulletLabel.frame = CGRectMake(Padding, 0, ljsize.width, 25);
+        self.ljBulletLabel.frame = CGRectMake(0, 0, width, cellHeight);
         //self.ljBulletLabel.backgroundColor = [UIColor yellowColor];
         self.ljBulletLabel.text = content;
+       
         [self addSubview:self.ljBulletLabel];
     }
     return self;
 }
 
-- (UILabel*)ljBulletLabel
-{
-    if (!_ljBulletLabel)
-    {
-        _ljBulletLabel = [[UILabel alloc]init];
-        _ljBulletLabel.backgroundColor = [UIColor clearColor];
-        _ljBulletLabel.font = [UIFont systemFontOfSize:14];
-        _ljBulletLabel.textColor = [UIColor redColor];
-    }
-    return _ljBulletLabel;
-}
+//- (UILabel*)ljBulletLabel
+//{
+//    if (!_ljBulletLabel)
+//    {
+//        _ljBulletLabel = [[UILabel alloc]init];
+//        _ljBulletLabel.backgroundColor = [UIColor clearColor];
+//        _ljBulletLabel.font = [UIFont systemFontOfSize:14];
+//        //_ljBulletLabel.textColor = [UIColor redColor];
+//        _ljBulletLabel.clipsToBounds = YES;
+//        _ljBulletLabel.layer.cornerRadius = 2;
+//        _ljBulletLabel.layer.borderWidth = 1;
+//    }
+//    return _ljBulletLabel;
+//}
 
 /** 开始弹幕动画*/
 - (void)startAnimation
@@ -141,10 +157,6 @@
      }];
 }*/
 
-- (CGSize)getTextCGSize :(NSString*)str Font :(UIFont*)font
-{
-    CGSize textSize = [str sizeWithAttributes:@{NSFontAttributeName : font}];
-    return textSize;
-}
+
 
 @end

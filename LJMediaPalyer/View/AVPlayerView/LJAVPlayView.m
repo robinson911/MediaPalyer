@@ -347,6 +347,8 @@
         [_avPlayControlView setStratDragSliderBlock:^{
              @myStrongify(self);
              [self.player seekToTime:CMTimeMakeWithSeconds(self.avPlayControlView.slider.value, self.playerItem.currentTime.timescale)];
+            
+            //[self.avPlayControlView setSliderValue:CMTimeGetSeconds(self.playerItem.currentTime)];
         }];
     }
     return _avPlayControlView;

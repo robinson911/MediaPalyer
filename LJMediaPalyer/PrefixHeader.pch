@@ -12,6 +12,11 @@
 #import "CHBaseViewController.h"
 #import "UIViewController+HUD.h"
 
+//字体
+#define loadFont(size)  [UIFont systemFontOfSize:size]
+#define loadColor(colorSize) [CHUtil colorWithHexString:colorSize]
+
+#import "CHUtil.h"
 
 /* 模拟器调试 */
 /** 1. 去这里 /usr/local/etc/mosquitto/ 给服务器绑定127.0.0.1 ip地址

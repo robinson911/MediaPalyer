@@ -102,6 +102,7 @@
         // 底部栏
         _bottomView = [[UIView alloc] init];
         _bottomView.frame = CGRectMake(0, self.frame.size.height - 50, self.frame.size.width, 50);
+        _bottomView.userInteractionEnabled = YES;
         _bottomView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.6];
     }
     return _bottomView;

@@ -93,7 +93,7 @@
 - (void)setTitleStr:(NSString *)titleStr
 {
     if (titleStr.length == 0) {
-        _ljAVPlayView.titleStr = @"美国大片";
+        titleStr = @"美国大片";
     }
     _ljAVPlayView.titleStr = titleStr;
 }
@@ -101,7 +101,7 @@
 - (void)setUrlStr:(NSString *)urlStr
 {
     if (urlStr.length == 0) {
-        _ljAVPlayView.urlStr = @"http://baobab.wdjcdn.com/1455969783448_5560_854x480.mp4";
+        urlStr = @"http://baobab.wdjcdn.com/1455969783448_5560_854x480.mp4";
     }
     _ljAVPlayView.urlStr = urlStr;
 }
@@ -118,8 +118,8 @@
             @myStrongify(self);
 //            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             
-                [self.ljBulletViewManager.allCommentsArray addObjectsFromArray: messageArray];
-                [self.ljBulletViewManager startBullet];
+                //[self.ljBulletViewManager.allCommentsArray addObjectsFromArray: messageArray];
+                //[self.ljBulletViewManager startBullet];
             //});
         }];
     }
@@ -140,7 +140,7 @@
         {
             @myStrongify(self);
             //将生成的弹幕View添加到当前屏幕上
-            [self.ljBulletViewManager createBulletView:bulletView];
+            //[self.ljBulletViewManager createBulletView:bulletView];
         };
     }
     return _ljBulletViewManager;

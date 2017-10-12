@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LJBulletView.h"
 
 @class LJBulletView;
 
@@ -14,16 +15,9 @@
 
 @property (nonatomic, copy) void(^generateBulletBlock)(LJBulletView *view);
 
-/** 弹幕数据源*/
-@property (nonatomic, strong) NSMutableArray *allCommentsArray;
+#pragma mark -- 最后一步渲染-----显示
+- (BOOL)renderNewDanmaku:(LJBulletView *)danmakuAgent forTime:(HJDanmakuTime)time;
 
-#pragma mark -- 创建弹幕UI
-- (void)createBulletView:(LJBulletView *)bulletView;
-
-#pragma mark -- 弹幕开始
-- (void)startBullet;
-
-#pragma mark -- 弹幕结束
-- (void)stopBullet;
+- (void)sendDanmaku:(LJBulletView *)danmaku forceRender:(BOOL)force;
 
 @end

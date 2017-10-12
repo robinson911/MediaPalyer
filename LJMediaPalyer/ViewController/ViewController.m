@@ -25,7 +25,7 @@
     
     [self setTopNavBarTitle:@"IOS Play Demo"];
     
-    _ljArray = @[@"LJAVPlayViewController", @"LJMPMoviePlayerController", @"LJMPMoviePlayerViewController",@"BasePlayViewController",@"LJVedioViewController"];
+    _ljArray = @[@"LJAVPlayViewController", @"LJMPMoviePlayerController", @"LJMPMoviePlayerViewController",@"BasePlayViewController",@"LJVedioViewController",@"LJBulletViewController"];
     
     [self.view addSubview:self.ljTableview];
     
@@ -34,7 +34,7 @@
 
 - (void)test
 {
-    LJTestView *_view =  [[LJTestView alloc]initWithContent:@"我是弹幕"];
+    LJTestView *_view =  [[LJTestView alloc]initWithContent:@"我是"];
     _view.frame = CGRectMake(kScreenWidth + 50, 20 + 34 * 3, 42, 14);
     [self.view addSubview:_view];
     [_view  startAnimation];
